@@ -1,0 +1,82 @@
+title: Adulthood in Harare
+
+<style>
+    body{
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        background: url('harare-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		text-align: center;
+        
+    }
+
+    .overlay{
+        background-color: rgba(0, 0, 0, 0); 
+        padding: 40px;
+        border-radius: 15px;
+        max-width: 700px;
+    }
+
+    h1{
+        font-size: 4em;
+        margin-bottom: 20px
+    }
+
+    p, a{
+        font-size: 1.2em;
+        line-height: 1.5;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    a: hover{
+        text-decoration: underline;
+		color: #ffd700;
+		transform: scale:(1.05);
+		transition: 0.3s;
+    }
+
+    /*Fade-in animation*/
+    .fade-in{
+        opacity: 0;
+		transform: translateY;
+        animation: fadeInText 2s forwards;
+        animation-delay: 2s; /*delay for dramatic effect*/
+		text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    @keyframes fadeInText {
+        to {
+		opacity: 1;
+		transform: translateY(0)
+		}
+    }
+	
+	/*Mobile responsiveness*/
+	@media (max-width: 768px){
+	  h1{
+	  	font-size: 3em;
+	  } 
+	  p, a{
+	  	font-size: 1em;
+	  }
+	  .overlay{
+	  	padding: 20px;
+		max-width: 90%;
+	  }
+	}
+</style>
+
+<div class="overlay">
+  <h1>Navigating Adulthood</h1>
+  <p>Behind this digital curtain lies a journey...</p>
+    <p>
+       <a href="Adulthood in Harare.pdf"target-"_blank">Read the article (PDF)</a>
+       </p>
+          <p class="fade-in">Buckle up!!! for this is just the alpha...more is yet to unfold.</p>
+          </div>
